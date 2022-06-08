@@ -1,0 +1,8 @@
+Primary orange: #ed8936
+Orange darker: #df4e33
+Fushia: #c5236e
+Yellow: #f5ca48
+Purple: #f5ca48
+
+
+
