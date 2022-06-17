@@ -22,7 +22,7 @@ import { NavLink } from "react-router-dom";
 import { FiMenu, FiChevronDown } from "react-icons/fi";
 import logo from "../Images/logo.png";
 // import UserContext from "../Context/UserContext";
-import avatar from "../Images/avatar-profile.png";
+import avatar from "../img/avatar-profile.png";
 // import useAuth from "../Hooks/useAuth";
 // import LoginModal from "./LoginModal";
 // import SignupModal from "./SignupModal";
@@ -80,8 +80,8 @@ function Navbar({ onOpen, onClose, ...rest }) {
         <Spacer />
         <Box display="flex" align="center" justify="center">
           <Center mr="7">
-            <NavLink to="home" className="nav-link">
-              Home
+            <NavLink to="hub" className="nav-link">
+              Hub
             </NavLink>
           </Center>
           <Center mr="7">
