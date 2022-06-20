@@ -6,7 +6,7 @@ import {
   useColorModeValue,
   Image,
 } from "@chakra-ui/react";
-import logo from "../Images/logo.png";
+import logo from "../../img/logo.png";
 
 const Logo = () => {
   return <Image src={logo} alt="logo" htmlWidth="120" />;
@@ -17,6 +17,10 @@ export default function SmallWithLogoLeft() {
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
       color={useColorModeValue("gray.700", "gray.200")}
+      position="fixed"
+      width="100%"
+      bottom="0"
+      height="65px"
     >
       <Container
         as={Stack}

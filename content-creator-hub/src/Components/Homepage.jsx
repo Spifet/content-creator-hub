@@ -7,7 +7,9 @@ import {
   Button,
   Image,
 } from "@chakra-ui/react";
-import illustration from "../Images/illustration_homepage.jpg";
+import illustration from "../img/illustration_homepage.jpg";
+import LoginModal from "./Authentication/LoginModal";
+import RegisterModal from "./Authentication/RegisterModal";
 
 export default function Homepage() {
   return (
@@ -34,18 +36,8 @@ export default function Homepage() {
           your favorite artists, engage with them and the community.
         </Text>
         <Stack spacing={6} direction={"row"}>
-          <Button
-            rounded={"full"}
-            px={6}
-            colorScheme={"orange"}
-            bg={"orange.400"}
-            _hover={{ bg: "orange.500" }}
-          >
-            I'm a Follower
-          </Button>
-          <Button rounded={"full"} px={6}>
-            I'm an Content Creator
-          </Button>
+          <RegisterModal />
+          <LoginModal />
         </Stack>
         <Flex w={"full"} justify={"center"}>
           <Image src={illustration} alt="illustration homepage" maxW={700} />
