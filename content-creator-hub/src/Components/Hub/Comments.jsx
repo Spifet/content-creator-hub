@@ -1,14 +1,6 @@
 import React from "react";
 
-import {
-  Avatar,
-  Box,
-  chakra,
-  Flex,
-  Icon,
-  SimpleGrid,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Avatar, chakra, Flex, SimpleGrid } from "@chakra-ui/react";
 
 const commentsArray = [
   {
@@ -58,7 +50,8 @@ function CommentCard(props) {
   return (
     <Flex
       boxShadow={"lg"}
-      maxW={"640px"}
+      minW={"680px"}
+      maxW={"740px"}
       direction={{ base: "column-reverse", md: "row" }}
       width={"full"}
       rounded={"xl"}
@@ -123,15 +116,16 @@ function Comments() {
   return (
     <Flex
       textAlign={"center"}
-      pt={10}
+      pt={5}
       justifyContent={"center"}
-      direction={"column"}
+      // direction={"column"}
+      direction={"row"}
       width={"full"}
       mb={5}
     >
       <SimpleGrid
-        columns={{ base: 1, xl: 2 }}
-        spacing={"20"}
+        columns={{ base: 1, xl: 1 }}
+        spacing={"10"}
         mt={2}
         mx={"auto"}
       >
