@@ -1,4 +1,6 @@
 import dotenv from 'dotenv';
+// Load environment variables from .env file
+dotenv.config();
 // Express service
 import express, { urlencoded, static as _static, json } from 'express';
 const app = express();
@@ -18,9 +20,6 @@ import {
   CommentRoutes,
   UserRoutes,
 } from './routes/index.js';
-
-// Load environment variables from .env file
-dotenv.config();
 
 // Middlewares
 app.use(urlencoded({ extended: false, limit: '50mb' }));

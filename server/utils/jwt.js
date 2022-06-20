@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+// Load environment variables from .env file
+dotenv.config();
 import pkg from 'jsonwebtoken';
 const { sign, verify } = pkg;
 
@@ -13,6 +16,9 @@ const createToken = (userID, email) => {
   const token = sign(payload, JWT_SECRET_KEY, {
     expiresIn: payload.expiresIn || '24h',
   });
+
+  console.log(token);
+
   return token;
 };
 

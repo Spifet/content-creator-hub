@@ -67,7 +67,9 @@ const register = async (req, res) => {
       token: '',
     });
 
-    user.updateOne({ token: createToken(user._id, email) });
+    const token = createToken(user._id, user.email);
+
+    user.updateOne({ token });
 
     return res.status(201).json({ user, token });
   } catch (err) {
